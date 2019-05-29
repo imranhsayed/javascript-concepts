@@ -11,7 +11,18 @@
 4. `npm install`
 5. `npm run server`
 
+## Branch Information :link:
+
+1. [async-await]() 
+
+* Callbacks add complexity and readability issue. And its messy to chain the tasks
+* A promise is an object that represent what the value will be when the operation finishes.
+So we can pass around a representation of a future value
+Promises are thin abstraction around call backs. ( e.g. `readFile.( 'config.json' ).then(...).catch(...)` )
+
 ## Useful Links :link:
+
+1. [async-await concept video](https://youtu.be/NsQ2QIrQShU)
 
 ## Instructions :point_right:
 
