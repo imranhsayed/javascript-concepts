@@ -1,4 +1,4 @@
 ( function () {
 
-
+console.warn( 'hello' );
 } )();

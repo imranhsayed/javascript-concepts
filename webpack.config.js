@@ -6,9 +6,23 @@ module.exports = {
 	output: {
 		path: path.resolve( __dirname, 'dist' ),
 		filename: 'main.js',
+		publicPath: '/',
 	},
-
+	devServer: {
+		historyApiFallback: true
+	},
+	module: {
+		rules: [
+			{
+				test: /\.js$/,
+				use: 'babel-loader',
+			}
+		]
+	},
 	plugins: [
-		new HtmlWebPackPlugin()
+		new HtmlWebPackPlugin({
+			template: path.resolve( __dirname, 'public/index.html' ),
+			filename: 'index.html'
+		})
 	]
 };
