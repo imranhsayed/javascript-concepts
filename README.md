@@ -13,12 +13,20 @@
 
 ## Useful Links :link:
 
-
 ## Instructions :point_right:
 
 ## Common Commands :computer:
 
-1. `npm start` starts a development server at [http://localhost:8081](http://localhost:8081) 
+1. `npm run dev` starts a webpack dev server at [http://localhost:8080](http://localhost:8080)
+2. `npm run prod` runs build for production in dist directory. 
+
+## Built With :zap:
+
+1. Node
+2. Express
+3. ES6
+4. Webpack
+5. Babel
 
 ## Author :bust_in_silhouette:
 
