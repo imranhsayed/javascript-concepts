@@ -4,7 +4,7 @@
   "description": "JavaScript Concept Examples",
   "main": "index.js",
   "scripts": {
-    "start": "http-server -c-1 -p 8081"
+    "start": "http-server -c-1 -p 8081 --watch"
   },
   "keywords": [
     "javascript"
