@@ -20,9 +20,19 @@
 So we can pass around a representation of a future value
 Promises are thin abstraction around call backs. ( e.g. `readFile.( 'config.json' ).then(...).catch(...)` )
 
+#### Async - declares an asynchronous function `(async function someName(){...})`.
+* Automatically transforms a regular function into a Promise.
+* When called async functions resolve with whatever is returned in their body.
+* Async functions enable the use of `await`.
+
+### Await - pauses the execution of async functions. `(const result = await someAsyncCall();)`.
+* When placed in front of a Promise call, await forces the rest of the code to wait until that Promise finishes and returns a result.
+* Await works only with Promises, it does not work with callbacks.
+* Await can only be used inside async functions.
+
 ## Useful Links :link:
 
-1. [async-await concept video](https://youtu.be/NsQ2QIrQShU)
+1. [async-await concept blog](https://tutorialzine.com/2017/07/javascript-async-await-explained)
 
 ## Instructions :point_right:
 
