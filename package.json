@@ -1,0 +1,17 @@
+{
+  "name": "javascript-concepts",
+  "version": "1.0.0",
+  "description": "JavaScript Concept Examples",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -c-1 -p 8081"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "Imran Sayed",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}
