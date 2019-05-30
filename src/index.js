@@ -1,4 +1,3 @@
-import axios from 'axios';
 ( function () {
 
 	/**
@@ -24,10 +23,11 @@ import axios from 'axios';
 	 * Promise Example 2
 	 */
 	const todosPromise = new Promise( ( resolve, reject ) => {
-		axios.get( 'https://jsonplaceholder.typicode.com/todos/' )
-			.then( res => {
-				resolve( res.data );
-			} );
+		fetch( 'https://jsonplaceholder.typicode.com/todos/' )
+			.then( res => res.json() )
+			.then( data => {
+				resolve( data );
+			} )
 	} );
 
 	todosPromise.then( value => {
