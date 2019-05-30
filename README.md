@@ -13,11 +13,11 @@
 
 ## Branch Information :link:
 
-1.[callbacks]()
+#### 1. [callbacks]()
 
 * Callbacks add complexity and readability issue. And its messy to chain the tasks
 
-2. [promises](https://github.com/imranhsayed/javascript-concepts/tree/promises)
+#### 2. [promises](https://github.com/imranhsayed/javascript-concepts/tree/promises)
 
 * A promise is an object that represent the eventual( future ) completion(or failure) of an asynchronous operation, and its future result value.
 Promises are thin abstraction around call backs. ( e.g. `readFile.( 'config.json' ).then(...).catch(...)` )
@@ -38,12 +38,12 @@ promise1.then(function(value) {
 
 3. [async-await](https://github.com/imranhsayed/javascript-concepts/tree/async-await) 
 
-#### Async - declares an asynchronous function `(async function someName(){...})`.
+##### Async - declares an asynchronous function `(async function someName(){...})`.
 * Automatically transforms a regular function into a Promise.
 * When called async functions resolve with whatever is returned in their body.
 * Async functions enable the use of `await`.
 
-### Await - pauses the execution of async functions. `(const result = await someAsyncCall();)`.
+##### Await - pauses the execution of async functions. `(const result = await someAsyncCall();)`.
 * When placed in front of a Promise call, await forces the rest of the code to wait until that Promise finishes and returns a result.
 * Await works only with Promises, it does not work with callbacks.
 * Await can only be used inside async functions.
