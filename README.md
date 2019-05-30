@@ -88,6 +88,8 @@ promise1.then(function(value) {
 ## Useful Links :link:
 
 1. [async-await concept blog](https://tutorialzine.com/2017/07/javascript-async-await-explained)
+2. [try-catch](https://www.w3schools.com/js/js_errors.asp)
+3. [Promise.all()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all)
 
 ## Instructions :point_right:
 
