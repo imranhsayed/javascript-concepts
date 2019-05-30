@@ -13,12 +13,30 @@
 
 ## Branch Information :link:
 
-1. [async-await]() 
+1.[callbacks]()
 
 * Callbacks add complexity and readability issue. And its messy to chain the tasks
-* A promise is an object that represent what the value will be when the operation finishes.
-So we can pass around a representation of a future value
+
+2. [promises](https://github.com/imranhsayed/javascript-concepts/tree/promises)
+
+* A promise is an object that represent the eventual( future ) completion(or failure) of an asynchronous operation, and its future result value.
 Promises are thin abstraction around call backs. ( e.g. `readFile.( 'config.json' ).then(...).catch(...)` )
+In below example what you pass in resolve will be available as value in `.then(( value )=> ...)`
+
+```ruby
+var promise1 = new Promise(function(resolve, reject) {
+  setTimeout(function() {
+    resolve('foo');
+  }, 300);
+});
+
+promise1.then(function(value) {
+  console.log(value);
+  // expected output: "foo"
+});
+```
+
+3. [async-await](https://github.com/imranhsayed/javascript-concepts/tree/async-await) 
 
 #### Async - declares an asynchronous function `(async function someName(){...})`.
 * Automatically transforms a regular function into a Promise.
