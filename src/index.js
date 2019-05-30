@@ -19,6 +19,8 @@
 	 * Promise.all()
 	 *
 	 * Send all request at one time
+	 * The Promise.all() method returns a single Promise that resolves
+	 * when all of the promises passed as an iterable have resolved
 	 */
 	const promise1 = Promise.resolve(3);
 	const promise2 = 42;
@@ -29,7 +31,11 @@
 	} );
 
 	async function getABC() {
-		// Promise.all() allows us to send all requests at the same time.
+		/**
+		 * Promise.all() allows us to send all
+		 * requests at the same time.The Promise.all() method returns a single Promise that resolves when all of the promises passed as an iterable have resolved
+		 * @type {[number, number, any]}
+		 */
 		let results = await Promise.all([promise1, promise2, promise3])
 
 		return results;
