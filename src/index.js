@@ -45,4 +45,23 @@
 		console.warn( result );
 	} )
 
+	/**
+	 * Try and catch
+	 */
+	async function getPosts() {
+		try {
+			const postsData = await await fetch( 'https://jsonplaceholder.typicode.com/posts/' );
+			return postsData;
+		}
+		catch ( error ) {
+			console.warn( 'error', error );
+		}
+	}
+
+	getPosts()
+		.then( res => res.json() )
+		.then( ( result ) => {
+			console.warn( result );
+		} );
+
 } )();

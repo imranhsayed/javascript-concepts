@@ -48,6 +48,43 @@ promise1.then(function(value) {
 * Await works only with Promises, it does not work with callbacks.
 * Await can only be used inside async functions.
 
+##### Async Await Example
+
+```ruby
+	async function getTodoData() {
+		const todoData = await fetch( 'https://jsonplaceholder.typicode.com/todos/' );
+		return todoData;
+	}
+
+	getTodoData()
+		.then( res => res.json() )
+		.then( ( result ) => {
+		console.warn( result );
+	} );
+```
+
+
+##### Try and Catch Method
+
+```ruby
+	async function getPosts() {
+		try {
+			const postsData = await await fetch( 'https://jsonplaceholder.typicode.com/posts/' );
+			return postsData;
+		}
+		catch ( error ) {
+			console.warn( 'error', error );
+		}
+	}
+
+	getPosts()
+		.then( res => res.json() )
+		.then( ( result ) => {
+			console.warn( result );
+		} );
+
+```
+
 ## Useful Links :link:
 
 1. [async-await concept blog](https://tutorialzine.com/2017/07/javascript-async-await-explained)
