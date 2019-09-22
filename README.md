@@ -85,6 +85,28 @@ promise1.then(function(value) {
 
 ```
 
+## Fetch Example
+```ruby
+	fetch('https://example.com/wp-json/wp/v2/posts')
+		.then(
+			function(response) {
+				if (response.status !== 200) {
+					console.log('Looks like there was a problem. Status Code: ' +
+						response.status);
+					return;
+				}
+
+				// Examine the text in the response
+				response.json().then(function(data) {
+					console.log(data);
+				});
+			}
+		)
+		.catch(function(err) {
+			console.log('Fetch Error :-S', err);
+		});
+```
+
 ## Useful Links :link:
 
 1. [async-await concept blog](https://tutorialzine.com/2017/07/javascript-async-await-explained)
