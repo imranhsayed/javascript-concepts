@@ -1,7 +1,7 @@
 # JavaScript Concepts :mortar_board:
 
 ## Description :clipboard:
-> A demo app for JavaScript Concepts.
+> A demo app for JavaScript Concept.
 
 ## Installation :wrench:
 
